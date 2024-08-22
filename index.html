@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Home • Aryan's site</title>
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/styles.css">
+    <script defer src="./clock.js"></script>
 </head>
 
 <body>
     <header>
         <img src="./assets/aryan.jpg" alt="Profile Image" class="profile-img">
-        <h1>Home</h1>
+        <h1>siraryanmichael</h1>
         <nav>
             <ul>
-                <li><a href="./index.html" class="active">Home</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./experience.html">Experience</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <div style="justify-content: space-between; display: flex">
+                    <div>
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li><a href="./experience.html">Work Experience</a></li>
+                        <li><a href="./contact.html">Contact Me</a></li>
+                    </div>
+                    <div id="clock" class="clock"></div>
+                </div>
             </ul>
         </nav>
     </header>
@@ -28,15 +34,15 @@
                 href="https://toronto.northeastern.edu/academic_program/master-of-professional-studies-in-informatics/"
                 class="highlight">Informatics</a> with a specialization in Cloud Computing Application and Manangement
             at <a href="https://toronto.northeastern.edu/" class="highlight">Northeastern University</a>.</p>
-        <p>I have some experience in working with the MERN stack using Typescript and bit of Bash scripting, along with some rudimentary levels of Data Science and ML using Python.</p>
-        <p>I am a huge fan of the game of football <img src="./assets/football.svg"
-            class="icon" />.</p>
-        <p>I made this site using pure <a href="#" class="highlight">HTML and CSS</a>.</p>
+        <p>I have some experience in working with the MERN stack using Typescript and bit of Bash scripting, along with
+            some rudimentary levels of Data Science and ML using Python.</p>
+        <p>I am a huge fan of the game of football <img src="./assets/football.svg" class="icon" />.</p>
+        <p>I made this site using <a href="/" class="highlight">HTML</a>, <a href="/" class="highlight">CSS</a> and <a href="/" class="highlight">Javascript</a> and it has been deployed on the web using <a href="/" class="highlight">Vercel</a>.</p>
     </main>
     <footer>
-        <p><a href="https://www.linkedin.com/in/aryan-michael/" class="active">linkedin</a> | <a
-                href="https://x.com/siraryanmichael" class="active">twitter</a> | <a
-                href="https://github.com/aryan-michael" class="active">github</a></p>
+        <p><a href="https://www.linkedin.com/in/aryan-michael/" class="active">linkedin<img src="./assets/link-arrow.svg" class="icon" style="vertical-align: middle; margin-bottom: 2px;"/></a> | <a
+                href="https://x.com/siraryanmichael" class="active">twitter<img src="./assets/link-arrow.svg" class="icon" style="vertical-align: middle; margin-bottom: 2px;"/></a> | <a
+                href="https://github.com/aryan-michael" class="active">github<img src="./assets/link-arrow.svg" class="icon" style="vertical-align: middle; margin-bottom: 2px;"/></a> |&nbsp<span class="highlight">2024 © siraryanmichael</span></p> 
     </footer>
 </body>
 
