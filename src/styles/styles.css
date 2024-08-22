@@ -1,0 +1,228 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    font-family: monospace;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+header {
+    margin-top: 20px;
+    /* Added top margin */
+    margin-bottom: 5px;
+    flex-shrink: 0;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20%;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #569cd6;
+}
+
+nav ul li a.active {
+    color: #4ec9b0;
+}
+
+main {
+    flex-grow: 1;
+    /* Allows the main section to grow and fill the available space */
+    overflow-y: auto;
+    /* Makes the main section scrollable */
+    scrollbar-width: thin;
+    /* Makes the scrollbar thin */
+    scrollbar-color: #888 #1e1e1e;
+    /* Thumb color and track color */
+}
+
+main .icon {
+    height: 18px;
+    width: 18px;
+    margin-bottom: -4px;
+    fill: white;
+}
+
+main .icon:hover {
+    filter: invert(33%) sepia(99%) saturate(618%) hue-rotate(175deg) brightness(92%) contrast(101%);
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #569cd6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.highlight {
+    color: #4ec9b0;
+}
+
+footer {
+    font-size: 14px;
+    border-top: 1px solid #d4d4d4;
+    padding-top: 2px;
+    margin-top: 25px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+footer a {
+    margin: 5px 10px;
+    /* Increased horizontal margin */
+}
+
+
+/* BLOG
+.post-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.post {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.post p {
+    margin-block-end: 0;
+    line-height: 0;
+}
+
+.post a {
+    line-height: 1.5;
+} */
+
+/* MARKDOWN
+code {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    font-size: 0.9em;
+    background-color: #1e1e1e;
+    padding: 1rem;
+    display: block;
+}
+
+hr {
+    border-color: #363636;
+    margin: 1rem 0;
+}
+
+blockquote {
+    border-left: 4px solid #61ABFF;
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 3rem;
+} */
+
+/* NAVIGATION
+.navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+}
+
+.nav-divider {
+    margin-top: 1rem;
+} */
+
+/* NOT_FOUND
+.not-found-body {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #d4d4d4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.not-found-container {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 720px) {
+    .not-found-container {
+        width: 95%;
+    }
+}
+
+.go-back {
+    text-decoration: none;
+    color: #61ABFF;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 0.4em;
+    }
+} */
