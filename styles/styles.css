@@ -11,8 +11,8 @@ body {
     background-color: #1e1e1e;
     color: #d4d4d4;
     max-width: 800px;
-    margin: 0 auto;
     padding: 20px;
+    margin: 0 auto;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -120,9 +120,23 @@ a:hover {
     text-decoration: underline;
 }
 
+.active {
+    color: #569cd6;
+}
+
 .highlight {
     color: #4ec9b0;
 }
+
+.dark {
+    color: #888;
+}
+
+img.favicon {
+    border-radius: 50%; /* Makes the favicon circular */
+    overflow: hidden; /* Ensures the image respects the rounded corners */
+}
+
 
 footer {
     font-size: 14px;
@@ -140,108 +154,30 @@ footer p {
     padding-bottom: 5px;
 }
 
+.copyright {
+    color: #4ec9b0;
+}
+
 footer a {
     margin: 5px 10px;
 }
 
+@media(max-width: 768px){
+    nav ul li {
+        font-size: 12px;
+        margin-right: 10px;
+    }
 
-/* BLOG
-.post-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    .clock {
+        font-size: 12px; 
+        margin-top: 1.47px;
+    }
 
-}
+    .footer-div {
+        flex-direction: column;
+    }
 
-.post {
-    display: flex;
-    align-items: baseline;
-    gap: 1rem;
-}
-
-.post p {
-    margin-block-end: 0;
-    line-height: 0;
-}
-
-.post a {
-    line-height: 1.5;
-} */
-
-/* MARKDOWN
-code {
-    font-family: Consolas, "Liberation Mono", Courier, monospace;
-    font-size: 0.9em;
-    background-color: #1e1e1e;
-    padding: 1rem;
-    display: block;
-}
-
-hr {
-    border-color: #363636;
-    margin: 1rem 0;
-}
-
-blockquote {
-    border-left: 4px solid #61ABFF;
-    padding: 0 1rem;
-    margin: 1rem 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 3rem;
-} */
-
-/* NAVIGATION
-.navigation {
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-item:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.4em;
-}
-
-.nav-divider {
-    margin-top: 1rem;
-} */
-
-/* NOT_FOUND
-.not-found-body {
-    font-family: 'Space Mono', monospace;
-    margin: 0;
-    padding: 0;
-    background-color: #121212;
-    color: #d4d4d4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
-}
-
-.not-found-container {
-    width: 720px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-@media (max-width: 720px) {
-    .not-found-container {
-        width: 95%;
+    .copyright {
+        margin-top: -40px;
     }
 }
-
-.go-back {
-    text-decoration: none;
-    color: #61ABFF;
-
-    &:hover {
-        text-decoration: underline;
-        text-underline-offset: 0.4em;
-    }
-} */
