@@ -181,3 +181,34 @@ footer a {
         margin-top: -40px;
     }
 }
+
+
+/* General styles for the table */
+/* table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 768px) {
+    .date-cell {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .highlight,
+    .dark {
+        padding-left: 0;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+    }
+} */
