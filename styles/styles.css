@@ -85,10 +85,13 @@ main {
     /* Allows the main section to grow and fill the available space */
     overflow-y: auto;
     /* Makes the main section scrollable */
+    scrollbar-width: none;
+}
+
+main:hover {
     scrollbar-width: thin;
-    /* Makes the scrollbar thin */
     scrollbar-color: #888 #1e1e1e;
-    /* Thumb color and track color */
+    scroll-behavior: smooth;
 }
 
 main .icon {
@@ -98,8 +101,42 @@ main .icon {
     fill: white;
 }
 
-main .icon:hover {
+
+/* GITHUB ICON */
+main .github-icon {
+    height: 24px;
+    width: 24px;
+    fill: white;
+}
+
+main .github-icon:hover {
+    filter: invert(48%) sepia(86%) saturate(2100%) hue-rotate(5deg) brightness(104%) contrast(103%);
+}
+/* GITHUB ICON */
+
+/* FILE ICON */
+main .file-icon {
+    height: 23px;
+    width: 23px;
+    fill: white;
+}
+
+main .file-icon:hover {
+    filter: invert(48%) sepia(86%) saturate(2100%) hue-rotate(5deg) brightness(104%) contrast(103%);
+}
+/* FILE ICON */
+
+main .icon-test {
+    height: 24px;
+    width: 24px;
+}
+
+/* main .icon:hover {
     filter: invert(33%) sepia(99%) saturate(618%) hue-rotate(175deg) brightness(92%) contrast(101%);
+} */
+
+main .icon:hover {
+    filter: invert(48%) sepia(86%) saturate(2100%) hue-rotate(5deg) brightness(104%) contrast(103%);
 }
 
 h2 {
@@ -130,6 +167,10 @@ a:hover {
 
 .dark {
     color: #888;
+}
+
+.amber {
+    color: #ffab40;
 }
 
 img.favicon {
@@ -184,31 +225,53 @@ footer a {
 
 
 /* General styles for the table */
-/* table {
+table {
     width: 100%;
     border-collapse: collapse;
-}
-
-td {
-    padding: 8px;
+  }
+  
+  .date-cell {
+    /* display: block; */
+    width: 25%;
+    text-align: left;
+    /* margin-bottom: 10px; */
+    align-content: start;
+    color: #c586c0;
+  }
+  
+  .bullet-point-cell {
+    /* display: block; */
+    width: 5%;
+    text-align: left;
+    /* margin-bottom: 10px; */
+    align-content: start;
+    color: #c586c0;
+  }
+  
+  td {
+    /* padding: 8px; */
     vertical-align: top;
-}
-
-@media screen and (max-width: 768px) {
+  }
+  
+  /* Media query for mobile view */
+  @media screen and (max-width: 768px) {
     .date-cell {
-        display: block;
+        /* display: block; */
         width: 100%;
         text-align: left;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+        align-content: start;
+        color: #c586c0;
     }
-
+  
     .highlight,
     .dark {
         padding-left: 0;
     }
-
+  
     td {
         display: block;
         width: 100%;
     }
-} */
+  }
+  

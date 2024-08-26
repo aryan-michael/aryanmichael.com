@@ -1,4 +1,4 @@
-.timeline {
+/* .timeline {
   position: relative;
   margin: 20px 0;
   padding: 10px 0;
@@ -25,13 +25,13 @@
 .timeline-content {
   width: 75%;
   padding-left: 20px;
-  border-left: 2px solid #007BFF; /* Line color */
+  border-left: 2px solid #007BFF;
   position: relative;
 }
 
 .timeline-content h3 {
   margin-top: 0;
-  color: #007BFF; /* Title color */
+  color: #007BFF;
 }
 
 .timeline-content p {
@@ -46,7 +46,7 @@
   width: 12px;
   height: 12px;
   background-color: #fff;
-  border: 2px solid #007BFF; /* Circle color */
+  border: 2px solid #007BFF;
   border-radius: 50%;
   z-index: 1;
 }
@@ -58,9 +58,9 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background-color: #007BFF; /* Line color */
+  background-color: #007BFF;
   z-index: 0;
-}
+} */
 
 
 /* General styles for the table */
@@ -72,6 +72,15 @@ table {
 .date-cell {
   /* display: block; */
   width: 25%;
+  text-align: left;
+  /* margin-bottom: 10px; */
+  align-content: start;
+  color: #c586c0;
+}
+
+.bullet-point-cell {
+  /* display: block; */
+  width: 5%;
   text-align: left;
   /* margin-bottom: 10px; */
   align-content: start;

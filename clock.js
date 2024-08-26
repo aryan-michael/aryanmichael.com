@@ -22,3 +22,6 @@ setInterval(updateClock, 1000);
 
 // Initialize the clock immediately
 updateClock();
+
+
+document.getElementById("year").textContent = new Date().getFullYear();
