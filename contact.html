@@ -8,6 +8,35 @@
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/styles.css">
     <script defer src="./clock.js"></script>
+    <style>
+        ul.custom-list {
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            row-gap: 20px;
+        }
+
+        /* Define custom list style */
+        ul.custom-list li {
+            position: relative;
+            padding-left: 25px;
+        }
+
+        ul.custom-list li::before {
+            content: "↦";
+            position: absolute;
+            left: 0;
+            color: #ffab40;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            top: 50%;
+            transform: translateY(-50%); /* Center marker vertically */
+        }
+    </style>
 </head>
 
 <body>
@@ -31,10 +60,30 @@
         </nav>
     </header>
     <main>
+        <ul class="custom-list" style="list-style-position: outside;">
+            <li><span>Email me at </span><a href="mailto:aryanmichael24@gmail.com" class="highlight">aryanmichael24@gmail.com</a>.
+            </li>
+            <li>Let's connect on <a href="https://x.com/siraryanmichael"><img src="./assets/twitter.svg"
+                        class="x-icon" /></a>. Send me a DM
+                at <a href="https://x.com/siraryanmichael" class="highlight">@siraryanmichael</a> and let's share ideas!
+            </li>
+            <li>Check out my projects on <a href="https://github.com/aryan-michael"><img src="./assets/github.svg"
+                        class="github-icon" style="margin-bottom: -6px;" /></a>. Let me know
+                what you think.</li>
+            <li>Connect with me on <a href="https://linkedin.com/in/aryan-michael"><img src="./assets/linkedin.svg"
+                        class="icon" style="vertical-align: middle; margin-bottom: 7px;" /></a>.</li>
+            <li>Download my resume from <span class="amber" style="font-size: larger;">→</span><a
+                    href="./assets/Aryan Michael-Professional Resume.pdf"
+                    download="Aryan Michael-Professional Resume.pdf"><img src="./assets/file.svg" class="file-icon"
+                        style="vertical-align: middle; margin-bottom: 3px;" /></a>.</li>
+        </ul>
+    </main>
+
+    <!-- <main>
         <p><span class="amber" style="font-size: larger;">↦</span> Email me at <a href="mailto:aryanmichael24@gmail.com"
                 class="highlight">aryanmichael24@gmail.com</a>.</p>
         <p><span class="amber" style="font-size: larger;">↦</span> Let's connect on <a
-                href="https://x.com/siraryanmichael"><img src="./assets/twitter.svg" class="icon" /></a>. Send me a DM
+                href="https://x.com/siraryanmichael"><img src="./assets/twitter.svg" class="x-icon" /></a>. Send me a DM
             at <a href="https://x.com/siraryanmichael" class="highlight">@siraryanmichael</a> and let's share ideas!</p>
         <p><span class="amber" style="font-size: larger;">↦</span> Check out my projects on <a
                 href="https://github.com/aryan-michael"><img src="./assets/github.svg" class="github-icon" style="margin-bottom: -6px;"/></a>. Let me know
@@ -45,7 +94,8 @@
         <p><span class="amber" style="font-size: larger;">↦</span> Download my resume from <span class="amber" style="font-size: larger;">→</span><a
                 href="./assets/Aryan Michael-Professional Resume.pdf" download="Aryan Michael-Professional Resume.pdf"><img src="./assets/file.svg" class="file-icon"
                     style="vertical-align: middle; margin-bottom: 3px;" /></a>.</p>
-    </main>
+    </main> -->
+    
     <footer>
         <div class="footer-div" style="display: flex; justify-content: center;">
             <p style="display: flex"><a href="https://www.linkedin.com/in/aryan-michael/" class="active">linkedin<img

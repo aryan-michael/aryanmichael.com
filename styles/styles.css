@@ -47,7 +47,7 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0 0 20px 0;
+    margin: 0 0 16px 0;
     border-bottom: 1px solid #d4d4d4;
     padding-bottom: 10px;
     flex-grow: 1; /* Allows ul to use available space */
@@ -85,14 +85,16 @@ main {
     /* Allows the main section to grow and fill the available space */
     overflow-y: auto;
     /* Makes the main section scrollable */
-    scrollbar-width: none;
-}
-
-main:hover {
     scrollbar-width: thin;
     scrollbar-color: #888 #1e1e1e;
     scroll-behavior: smooth;
 }
+
+/* main:hover {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #1e1e1e;
+    scroll-behavior: smooth;
+} */
 
 main .icon {
     height: 18px;
@@ -101,6 +103,18 @@ main .icon {
     fill: white;
 }
 
+/* X ICON */
+main .x-icon {
+    height: 23px;
+    width: 23px;
+    margin-bottom: -5px;
+    fill: white;
+}
+
+main .x-icon:hover {
+    filter: invert(48%) sepia(86%) saturate(2100%) hue-rotate(5deg) brightness(104%) contrast(103%);
+}
+/* X ICON */
 
 /* GITHUB ICON */
 main .github-icon {
@@ -183,7 +197,7 @@ footer {
     font-size: 14px;
     border-top: 1px solid #d4d4d4;
     padding-top: 2px;
-    margin-top: 25px;
+    margin-top: 18px;
     text-align: center;
     flex-shrink: 0;
 }
